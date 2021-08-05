@@ -1,0 +1,306 @@
+<h1>Hello World</h1>
+<p>start interpolation</p>
+{{title}}
+<h1>{{name}}</h1>
+<h2>Return Name :-{{getName()}}</h2>
+<h1>{{obj.age}}</h1>
+<h3>{{arr.length}}</h3>
+<h4>{{10+10}}</h4>
+<h5>{{a+b}}</h5>
+<h6>{{siteUrl}}</h6>
+<p>end interpolation</p>
+
+<h1>what is component in Angular</h1>
+<app-user-list></app-user-list>
+<app-login></app-login>
+<app-signup></app-signup>
+<button (click)="sonuGupta(myName)" style="margin-bottom: 20px;">get My Name</button><br>
+
+
+<button (click)="myEvent('this is click event')">Click Me</button><br><br>
+keyup <input type="text" #box (keyup)="myEvent(box.value)"><br><br>
+keyup Enter<input type="text" #box2 (keyup.enter)="myEvent(box2.value)"><br><br>
+keyup Space<input type="text" #box3 (keyup.space)="myEvent(box3.value)"><br><br>
+keyup Down<input type="text" #box4 (keydown)="myEvent(box4.value)"><br><br>
+Blur Event<input type="text" (blur)="myEvent('blure event')"><br><br>
+keydown and Blur Event<input type="text" #box5 (keydown)="myEvent(box5.value)" (blur)="myEvent('blure event')"><br><br>
+<div (mouseover)="myEvent('mouse in')" style="background-color: aqua;">
+    Mouse Event
+</div><br><br>
+
+<div (mouseleave)="myEvent('mouse leave')" style="background-color: rgb(0, 255, 98);">
+    Mouse Event
+</div>
+
+<br><br>
+<h1>Get Textbox value in Angular</h1>
+<input type="text" (keyup)="getval($event.target.value)" />
+<h2>{{currentVal}}</h2>
+<br><br>
+
+<br><br>
+<h1>Get Textbox value from click button in Angular</h1>
+<input type="text" #box10 />
+<button (click)="getval2(box10.value)">get value</button>
+<h2>{{currentVal2}}</h2>
+<br><br>
+
+<h1>Property Binding in Angular</h1>
+<input type="text" [disabled]="disabledBox" [value]="nameF">
+<br><br>
+
+<h1>interpolation in Angular</h1>
+<input type="text" disabled={{disabledBox}} value={{nameF}}>
+<br><br>
+<button (click)="enableBox()">Enable TextBox</button><br><br>
+
+<h1>Conditions in Angular</h1>
+<h1 *ngIf="show=='yes'; then ifBlock else elseBlock">
+
+</h1>
+<ng-template #ifBlock>
+    <h1>if block</h1>
+</ng-template>
+<ng-template #elseBlock>
+    <h1>else block</h1>
+</ng-template>
+
+<h1>Conditions in Angular</h1>
+<ng-template [ngIf]="show2=='red'">
+    <h1>Red Block</h1>
+</ng-template>
+<ng-template [ngIf]="show2=='green'"><h1>Hello World</h1>
+<p>start interpolation</p>
+{{title}}
+<h1>{{name}}</h1>
+<h2>Return Name :-{{getName()}}</h2>
+<h1>{{obj.age}}</h1>
+<h3>{{arr.length}}</h3>
+<h4>{{10+10}}</h4>
+<h5>{{a+b}}</h5>
+<h6>{{siteUrl}}</h6>
+<p>end interpolation</p>
+
+<h1>what is component in Angular</h1>
+<app-user-list></app-user-list>
+<app-login></app-login>
+<app-signup></app-signup>
+<button (click)="sonuGupta(myName)" style="margin-bottom: 20px;">get My Name</button><br>
+
+
+<button (click)="myEvent('this is click event')">Click Me</button><br><br>
+keyup <input type="text" #box (keyup)="myEvent(box.value)"><br><br>
+keyup Enter<input type="text" #box2 (keyup.enter)="myEvent(box2.value)"><br><br>
+keyup Space<input type="text" #box3 (keyup.space)="myEvent(box3.value)"><br><br>
+keyup Down<input type="text" #box4 (keydown)="myEvent(box4.value)"><br><br>
+Blur Event<input type="text" (blur)="myEvent('blure event')"><br><br>
+keydown and Blur Event<input type="text" #box5 (keydown)="myEvent(box5.value)" (blur)="myEvent('blure event')"><br><br>
+<div (mouseover)="myEvent('mouse in')" style="background-color: aqua;">
+    Mouse Event
+</div><br><br>
+
+<div (mouseleave)="myEvent('mouse leave')" style="background-color: rgb(0, 255, 98);">
+    Mouse Event
+</div>
+
+<br><br>
+<h1>Get Textbox value in Angular</h1>
+<input type="text" (keyup)="getval($event.target.value)" />
+<h2>{{currentVal}}</h2>
+<br><br>
+
+<br><br>
+<h1>Get Textbox value from click button in Angular</h1>
+<input type="text" #box10 />
+<button (click)="getval2(box10.value)">get value</button>
+<h2>{{currentVal2}}</h2>
+<br><br>
+
+<h1>Property Binding in Angular</h1>
+<input type="text" [disabled]="disabledBox" [value]="nameF">
+<br><br>
+
+<h1>interpolation in Angular</h1>
+<input type="text" disabled={{disabledBox}} value={{nameF}}>
+<br><br>
+<button (click)="enableBox()">Enable TextBox</button><br><br>
+
+<h1>Conditions in Angular</h1>
+<h1 *ngIf="show=='yes'; then ifBlock else elseBlock">
+
+</h1>
+<ng-template #ifBlock>
+    <h1>if block</h1>
+</ng-template>
+<ng-template #elseBlock>
+    <h1>else block</h1>
+</ng-template>
+
+<h1>Conditions in Angular</h1>
+<ng-template [ngIf]="show2=='red'">
+    <h1>Red Block</h1>
+</ng-template>
+<ng-template [ngIf]="show2=='green'">
+    <h1>Green Block</h1>
+</ng-template>
+<ng-template [ngIf]="show2=='blue'">
+    <h1>Blue Block</h1>
+</ng-template>  
+<ng-template [ngIf]="show2=='orange'">
+    <h1>orange Block</h1>
+</ng-template>
+
+<h1>Switch Case in Angular</h1>
+<div [ngSwitch]="color">
+    <h2 style="color: red;" *ngSwitchCase="'red'">red Color</h2>
+    <h2 style="color: green;" *ngSwitchCase="'green'">Green Color</h2>
+    <h2 style="color: blue;" *ngSwitchCase="'blue'">Blue Color</h2>
+    <h2 style="color: ryellow;" *ngSwitchCase="'yellow'">Yellow Color</h2>
+</div>
+
+<h1>For loop in angular</h1>
+<!-- <h4 *ngFor="let item of data">
+  {{item}} </h4>
+  {{item.name}}
+  {{item.age}}  -->
+
+  <table border="1" >
+      <tr>
+          <td>Name</td>
+          <td>Age</td>
+      </tr>
+      <tr *ngFor="let item of data">
+          <td>{{item.name}}</td>
+          <td> {{item.age}} </td>
+      </tr>
+  </table>
+
+  <h1>Simple Form in Angular</h1>
+  <form #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)">
+ <input type="text" ngModel name="username" placeholder="user name"><br><br>
+ <input type="text" ngModel name="age" placeholder="user age"><br><br>
+ <input type="text" ngModel name="address" placeholder="user address"><br><br>
+ <input type="password" ngModel name="password" placeholder="user password"><br><br>
+ <button>Get User value</button>
+  </form>
+
+
+
+  <app-header></app-header>
+  <h1>Make Header and Footer in angular</h1>
+  <!-- <app-footer></app-footer> -->
+
+  <h1>Style Binding in Angular</h1>
+  <h1 style="color:red;">Header 1</h1>
+  <h1 [style.color]="'green'">Header 1</h1>
+  <h1 [style.backgroundColor]="'yellow'">Header 1</h1>
+  <h1 [style.color]="color2">Dynamic Style</h1>
+  <button (click)="updateColor()">Update Color</button>
+  <h1 [style.color]="err?'red':'green'">Dynamic Style</h1>
+
+
+  <p *ngFor="let alert of alerts">
+    <ngb-alert [type]="alert.type" (close)="close(alert)">{{ alert.message }}</ngb-alert>
+  </p>
+  <p>
+    <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+  </p>
+
+  <div class="btn-group btn-group-toggle">
+    <label class="btn-primary" ngbButtonLabel>
+      <input type="checkbox" ngbButton [(ngModel)]="model.left"> Left (pre-checked)
+    </label>
+    <label class="btn-primary" ngbButtonLabel>
+      <input type="checkbox" ngbButton [(ngModel)]="model.middle"> Middle
+    </label>
+    <label class="btn-primary" ngbButtonLabel>
+      <input type="checkbox" ngbButton [(ngModel)]="model.right"> Right
+    </label>
+  </div>
+<hr>
+
+
+<button mat-button color="primary">Primary</button>
+<button mat-raised-button color="warn">Warn</button>
+<mat-slider min="1"></mat-slider>
+
+<!-- <h1>Pass Data To Child Component</h1>
+
+<app-users-com [hero]="parentData"></app-users-com> -->
+
+<!-- <h1>Resuable Component</h1>
+<div *ngFor="let data4 of reusableData">
+    <app-users-com [userData2]="data4"></app-users-com>
+</div> -->
+
+<h1>Send data child to parent component in angular</h1>
+<app-users-com   (parentComponent)="parentComponent($event)"></app-users-com>
+
+<br>
+<br>
+<br>
+<h3>{{nameN}}</h3>
+
+<!-- 
+<h2>{{lastName | uppercase}}</h2> -->
+
+<!-- <h2>{{lastName | titlecase}}</h2> -->
+<h2>{{lastName | lowercase}}</h2>
+<h2>{{today | date}}</h2>
+<h2>{{today | date :'fullDate'}}</h2>
+<h2>{{str | slice:2:5}}</h2>
+<h2>{{val | currency:'USD'}}</h2>
+<h2>{{val | currency:'UAD'}}</h2>
+
+
+<table border="1">
+<tr>
+   <td>ID</td>
+   <td>Title</td>
+   <td>USer ID</td>
+</tr>
+<tr *ngFor="let item of myData">
+    <td>{{item.name}}</td>
+    <td>{{item.title}}</td>
+    <td>{{item.userId}}</td>
+ </tr>
+   
+</table>
+
+<h1>Basic Routing</h1>
+<a routerLink="user" style="padding-right: 20px;">User</a>
+<a routerLink="admin">Admin</a>
+
+
+
+<h1>Group Routing in Angular</h1> 
+<h2>Admin Page</h2>
+<a routerLink="admin/login" style="padding-right: 20px;">Login</a>
+<a routerLink="admin/list">List</a>
+
+
+<h2>User Page</h2>
+<a routerLink="user/login" style="padding-right: 20px;">Login</a>
+<a routerLink="user/list">List</a>
+
+
+<h1>Lazy loading in angular</h1>
+<ul>
+    <li>
+        <a routerLink="admin-l/login" style="padding-right: 20px;">Login</a>
+        <a routerLink="admin-l/list">List</a>
+    </li>
+</ul>
+
+
+
+
+<router-outlet></router-outlet>
+
+
+
+
+
+  
+
+
